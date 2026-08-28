@@ -26,7 +26,7 @@
 │   beginner friendly       you already own.               │
 │   for those inexperinced                                 │
 ├──────────────────────────────────────────────────────────┤
-│                    PICK YOUR CASE                        │
+│                    Curated Deals                         │
 │                                                          │ 
 │    [Micro ATX]        [ATX]        [E-ATX]               │
 │                                                          │
