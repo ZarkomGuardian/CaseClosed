@@ -1,0 +1,62 @@
+/* 1. Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body { font-family: 'Poppins', sans-serif; }
+
+/* 2. Font Family */
+h1 { font-family: Arial, sans-serif; }
+
+/* 3. Font Size */
+h1 { font-size: 2.5rem; }
+
+/* 4. Font Weight */
+h1 { font-weight: 700; }
+
+/* 5. Letter Spacing */
+h2 { letter-spacing: 2px; }
+
+/* 6. Line Height */
+p { line-height: 1.6; }
+
+/* 7. Uppercase Text */
+h1 { text-transform: uppercase; }
+
+/* 8. Center Text */
+.center { text-align: center; }
+
+/* 9. Text Shadow */
+h1 { text-shadow: 2px 2px 5px gray; }
+
+/* 10. Gradient Text */
+h1{
+background:linear-gradient(90deg,red,orange);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+/* 11. Responsive Text */
+h1 { font-size: clamp(1.5rem,4vw,3rem); }
+
+/* 12. Word Wrap */
+p { overflow-wrap: anywhere; }
+
+/* 13. Small Caps */
+h2 { font-variant: small-caps; }
+
+/* 14. Selection Color */
+::selection { background:black; color:white; }
+
+/* 15. First Letter */
+p::first-letter{
+font-size:200%;
+font-weight:bold;
+}
+
+/* 16. Quotes */
+q::before{content:open-quote;}
+q::after{content:close-quote;}
+
+/* 17. Link Hover */
+a:hover { color: orange; }
+
+/* 18. Active Link */
+a:active { color:red; }

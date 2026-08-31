@@ -1,0 +1,91 @@
+/* 57 */
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+}
+
+/* 58 */
+.frame{
+border:6px solid white;
+box-shadow:0 5px 15px gray;
+}
+
+/* 59 */
+.zoom:hover{
+transform:scale(1.08);
+}
+
+/* 60 */
+.rotate:hover{
+transform:rotate(4deg);
+}
+
+/* 61 */
+.gray{
+filter:grayscale(100%);
+}
+
+/* 62 */
+.blur:hover{
+filter:blur(2px);
+}
+
+/* 63 */
+figcaption{
+position:absolute;
+bottom:0;
+background:rgba(0,0,0,.5);
+}
+
+/* 64 */
+img{
+object-fit:cover;
+}
+
+/* 65 */
+.polaroid{
+padding:10px;
+background:white;
+}
+
+/* 66 */
+.img-grad{
+border-image:
+linear-gradient(red,cyan) 1;
+}
+
+/* 67 */
+.icon{
+font-size:30px;
+}
+
+/* 68 */
+svg path{
+fill:red;
+}
+
+/* 69 */
+iframe{
+width:100%;
+height:100%;
+}
+
+/* 70 */
+video{
+border-radius:12px;
+}
+
+/* 71 */
+figure{
+overflow:hidden;
+border-radius:12px;
+}
+
+/* 72 */
+.img-overlay::after{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(transparent,black);
+}

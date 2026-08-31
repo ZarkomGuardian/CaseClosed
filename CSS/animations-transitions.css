@@ -1,0 +1,94 @@
+/* 89 */
+.smooth{
+transition:.3s;
+}
+
+/* 90 */
+.fade-in{
+animation:fade-in .8s;
+}
+
+@keyframes fade-in{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* 91 */
+.slide-up{
+animation:up .6s;
+}
+
+@keyframes up{
+from{
+transform:translateY(20px);
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+/* 92 */
+.pulse:hover{
+animation:pulse .8s infinite;
+}
+
+@keyframes pulse{
+from{transform:scale(1);}
+to{transform:scale(1.05);}
+}
+
+/* 93 */
+.wiggle:hover{
+animation:wig .4s;
+}
+
+@keyframes wig{
+50%{transform:rotate(-3deg);}
+}
+
+/* 94 */
+.shimmer{
+animation:shim 1.2s infinite;
+}
+
+/* 95 */
+.type{
+border-right:2px solid black;
+}
+
+/* 96 */
+.spin{
+animation:spin 5s linear infinite;
+}
+
+@keyframes spin{
+to{transform:rotate(360deg);}
+}
+
+/* 97 */
+.moving-grad{
+animation:shift 8s infinite;
+}
+
+/* 98 */
+.reveal.show{
+opacity:1;
+}
+
+/* 99 */
+.bounce{
+animation:bounce 1s infinite;
+}
+
+@keyframes bounce{
+50%{
+transform:translateY(-10px);
+}
+}
+
+/* 100 */
+.ripple{
+overflow:hidden;
+position:relative;
+}
