@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    background-color: #191443;
+}
+
+p {
+    color: white;
+}
+
+ol {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.NAV {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
