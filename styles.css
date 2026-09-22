@@ -1,0 +1,30 @@
+/* 191443
+That is the color of the background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #281443;
+  color: #0da2dd;
+  line-height: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Heading style */
+h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Paragraph style */
+p {
+  font-size: 1.2rem;
+  color: #0da2dd;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+}
