@@ -27,4 +27,8 @@ p {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+
+  .zoom:hover{
+transform:scale(1.08);
+}
 }
