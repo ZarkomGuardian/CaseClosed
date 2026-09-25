@@ -3,7 +3,7 @@ That is the color of the background */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #281443;
+  background-color: rgb(40, 20, 67);
   color: #0da2dd;
   line-height: 1;
   text-align: center;
@@ -18,7 +18,7 @@ h1 {
 }
 
 /* Paragraph style */
-p {
+p.Box {
   font-size: 1.2rem;
   color: #0da2dd;
   max-width: 600px;
@@ -35,4 +35,19 @@ transform:scale(1.08);
 
 .Tutorial {
   line-height: 1.8;
+}
+
+p.Tutorial {
+  line-height: 1.8;
+}
+
+.box2 {
+  font-size: 1.2rem;
+  color: rgb(60, 40, 87);
+  margin: 0 auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+  line-height: 2.1;
 }
