@@ -36,3 +36,12 @@ transform:scale(1.08);
 .Tutorial {
   line-height: 1.8;
 }
+
+.pulse:hover{
+animation:pulse .8s infinite;
+}
+
+.small {
+  width: 61%;
+  height: 70%;
+}
