@@ -3,7 +3,7 @@ That is the color of the background */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #281443;
+  background-color: rgb(40, 20, 67);
   color: #0da2dd;
   line-height: 1;
   text-align: center;
@@ -18,7 +18,7 @@ h1 {
 }
 
 /* Paragraph style */
-p {
+p.Box {
   font-size: 1.2rem;
   color: #0da2dd;
   max-width: 600px;
@@ -35,13 +35,4 @@ transform:scale(1.08);
 
 .Tutorial {
   line-height: 1.8;
-}
-
-.pulse:hover{
-animation:pulse .8s infinite;
-}
-
-.small {
-  width: 61%;
-  height: 70%;
 }
