@@ -36,3 +36,7 @@ transform:scale(1.08);
 .Tutorial {
   line-height: 1.8;
 }
+
+.bounce{
+animation:bounce 3s infinite;
+}
