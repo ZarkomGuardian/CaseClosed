@@ -37,6 +37,7 @@ transform:scale(1.08);
   line-height: 1.8;
 }
 
-.wigglehover{
-animation:wig .6s;
+.frame {
+border:6px solid white;
+box-shadow:0 5px 15px rgb(0, 16, 247);               /*MY PROUDEST CREATION -pierre*/
 }
