@@ -1,5 +1,5 @@
 ┌──────────────────────────────────────────────────────────┐
-│ CARDBOX PC        CASES   CUSTOM PC   HOW TO BUILD   🛒  │
+│ CaseClosed       CASES   CUSTOM PC   HOW TO BUILD   🛒  │
 ├──────────────────────────────────────────────────────────┤
 │                                                          │
 │             BUILD IT. CHANGE IT. MAKE IT YOURS.          │
