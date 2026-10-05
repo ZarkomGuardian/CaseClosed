@@ -1,13 +1,639 @@
-/* 191443
-That is the color of the background */
+
+/* le header, manager of le headchaland */
+
+.SiteHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 24px;
+
+    background: #101426;
+    border-bottom: 2px solid #46d9c5;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Haute Couture::Le Noir Brand Manager  */
+
+.SiteLogo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    flex-shrink: 0;
+}
+
+.SiteLogoImage {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.SiteLogo:hover .SiteLogoImage {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+/* the map of la headchaland */
+
+.SiteNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.SiteNav a {
+    display: inline-block;
+    padding: 12px 16px;
+
+    color: #d7e5f5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+
+    border-radius: 8px;
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.SiteNav a:hover {
+    color: #46d9c5;
+    background: rgba(70, 217, 197, 0.1);
+}
+
+
+/* le index, Rien won't know what hit em */
+
+.HomePage {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* THE SSS, or known as the Shared section styles */
+
+.HomePage section {
+    margin-bottom: 70px;
+}
+
+.Eyebrow {
+    color: #0da2dd;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.SectionHeading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.SectionHeading h2,
+.StoryContent h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 0 0 12px;
+}
+
+.SectionHeading > p:last-child {
+    color: #d4cce0;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Hero, by mili */
+
+ .HomeHero {
+    position: relative;
+    isolation: isolate;
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 5%;
+    overflow: visible;
+
+    background: transparent;
+    border-bottom: 1px solid rgba(13, 162, 221, 0.35);
+}
+
+.HeroText {
+    min-width: 0;
+}
+
+.HeroText h1 {
+    color: #ffffff;
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin: 0 0 22px;
+}
+
+.HeroText h1 span {
+    color: #0da2dd;
+}
+
+.HeroDescription {
+    color: #d4cce0;
+    font-size: 1.1rem;
+    max-width: 540px;
+    line-height: 1.8;
+}
+
+.HeroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+
+.Button {
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.Button:hover {
+    transform: translateY(-3px);
+}
+
+.ButtonPrimary {
+    color: #281443;
+    background: #0da2dd;
+    box-shadow: 0 5px 20px rgba(13, 162, 221, 0.2);
+}
+
+.ButtonPrimary:hover {
+    background: #42c5f4;
+    box-shadow: 0 8px 25px rgba(13, 162, 221, 0.35);
+}
+
+.ButtonSecondary {
+    color: #ffffff;
+    border: 1px solid #0da2dd;
+    background: rgba(40, 20, 67, 0.5);
+}
+
+.ButtonSecondary:hover {
+    background: rgba(13, 162, 221, 0.15);
+}
+
+.HeroImage {
+    position: relative;
+    isolation: isolate;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeroImage img {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 530px;
+    max-height: 480px;
+    object-fit: contain;
+
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.4));
+    transition: transform 0.35s ease;
+}
+
+
+.ImageGlow {
+    position: absolute;
+    z-index: 0;
+
+    /* I CAST BIG, BIGGER GLOW THAN THE EYE HAS EVER SEEEN */
+    width: 175%;
+    height: 175%;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(13, 162, 221, 0.55) 0%,
+        rgba(40, 70, 180, 0.30) 35%,
+        rgba(13, 162, 221, 0.12) 55%,
+        transparent 75%
+    );
+
+    filter: blur(65px);
+    pointer-events: none;
+}
+ /* NOW's YOUR CHANCE TO BE A [BIG SHOT] */
+
+ .WhySection {
+    padding: 20px 4%;
+}
+
+.FeatureGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.FeatureCard {
+    background: #ffffff;
+    color: #281443;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid rgba(13, 162, 221, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.FeatureCard:hover {
+    transform: translateY(-5px);
+    border-color: #0da2dd;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.FeatureIcon {
+    font-size: 2rem;
+}
+
+.FeatureCard h3 {
+    color: #281443;
+    font-size: 1.1rem;
+    margin: 14px 0 8px;
+}
+
+.FeatureCard p {
+    color: #51455f;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+ 
+.DealsSection {
+    padding: 45px 4%;
+    background: rgba(16, 8, 29, 0.4);
+    border-top: 1px solid rgba(13, 162, 221, 0.25);
+    border-bottom: 1px solid rgba(13, 162, 221, 0.25);
+}
+
+.DealsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.DealCard {
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    color: #281443;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.DealCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.DealVisual {
+    height: 220px;
+    padding: 18px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f1edf7;
+    overflow: hidden;
+}
+
+.DealVisual img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.DealCard:hover .DealVisual img {
+    transform: scale(1.3);
+}
+
+.DealInfo {
+    padding: 22px;
+}
+
+.DealLabel {
+    color: #1685ad;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 0 0 8px;
+}
+
+.DealInfo h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+}
+
+.DealInfo > p:not(.DealLabel) {
+    min-height: 52px;
+    color: #51455f;
+    line-height: 1.6;
+}
+
+.DealButton {
+    display: block;
+    padding: 12px;
+    margin-top: 18px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #281443;
+    background: #0da2dd;
+    transition: background-color 0.2s ease;
+}
+
+.DealButton:hover {
+    background: #42c5f4;
+}
+
+.DealsNote {
+    color: #c8c0d8;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Not our story, our downfall */
+
+.StorySection {
+    padding: 60px 8%;
+    text-align: center;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(13, 162, 221, 0.1),
+            rgba(40, 20, 67, 0.1)
+        );
+    border: 1px solid rgba(13, 162, 221, 0.2);
+    border-radius: 14px;
+}
+
+.StoryContent {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.StoryTagline {
+    color: #ffffff;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.StoryTagline span {
+    color: #0da2dd;
+}
+
+.StoryContent > p:not(.Eyebrow):not(.StoryTagline) { /*this line traumatizes people on the spot */
+    color: #d4cce0;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 20px auto 28px;
+}
+
+
+
+/* 
+
+
+PAGE 1, I REPEAT WE ARE DONE WITH INDEX FINALLY
+
+
+*/
+
+
+.CatalogPage {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.CatalogHeading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 42px 4% 30px;
+    border-bottom: 1px solid rgba(13, 162, 221, 0.25);
+}
+
+.CatalogHeading h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+.CatalogHeading h1 span {
+    color: #0da2dd;
+}
+
+.CatalogHeading > p {
+    max-width: 350px;
+    color: #d4cce0;
+    font-size: 1.05rem;
+}
+
+.CatalogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+    padding: 35px 4% 60px;
+    align-items: stretch;
+}
+
+.CatalogCard {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    color: #281443;
+    border: 1px solid rgba(13, 162, 221, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.CatalogCard:hover {
+    transform: translateY(-5px);
+    border-color: #0da2dd;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.CatalogImage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 250px;
+    padding: 22px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #f1edf7;
+}
+
+.CatalogImage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.CatalogCard:hover .CatalogImage img {
+    transform: scale(1.06);
+}
+
+.CatalogTag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 7px 10px;
+
+    color: #ffffff;
+    background: #101426;
+    border-radius: 5px;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.CatalogInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px;
+}
+
+.CatalogCategory {
+    margin: 0 0 9px;
+    color: #1685ad;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+
+.CatalogInfo h2 {
+    margin: 0 0 10px;
+    color: #281443;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.CatalogInfo > p:not(.CatalogCategory):not(.CatalogPrice) {
+    margin: 0 0 20px;
+    color: #51455f;
+    line-height: 1.7;
+}
+
+.CatalogPrice {
+    margin: auto 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #e4ddec;
+
+    color: #281443;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.CatalogFooter {
+    margin: 0 4% 40px;
+    padding: 40px 24px;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        rgba(13, 162, 221, 0.12),
+        rgba(16, 20, 38, 0.55)
+    );
+
+    border: 1px solid rgba(13, 162, 221, 0.3);
+    border-radius: 12px;
+}
+
+.CatalogFooter h2 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+.CatalogFooter > p:not(.Eyebrow) {
+    margin: 0 auto 22px;
+    color: #d4cce0;
+    line-height: 1.7;
+}
+
+
+/* im not really going to be doing more comments after this execpt for page divders... any under this are page dividers or preplaced */
+
+
+/* lowk, didn't organize this by page until i decided to work on it... eh idc */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: rgb(40, 20, 67);
   color: #0da2dd;
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
-  padding: 40px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -16,37 +642,359 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Smaller text boxes for introductions and descriptions, Y'all made it look like it was for PHONES, I HAVE A WIDE SCREEN MONITER PEOPLE*/
 .Box {
   font-size: 1.2rem;
   color: #0da2dd;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 20px auto;
   background: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+  box-sizing: border-box;
+  text-align: left;
 }
 
+/* Wide boxes for detailed instructions and lists, THIS, THIS IS HOW DO DO THINGS AROUND HERE!!!!! */
 .Box2 {
+  width: 100%;
   font-size: 1.2rem;
   color: #0da2dd;
-  margin: 0 auto;
+  margin: 20px auto;
   background: #fff;
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
   line-height: 1.8;
-  }
-.zoom:hover{
-  transform:scale(1.08);
+  box-sizing: border-box;
 }
 
+
+.Box3 {
+  font-size: 1.2rem;
+  color: #0da2dd;
+  max-width: 350px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.zoom:hover {
+  transform: scale(1.08);
+}
 
 .Tutorial {
   line-height: 1.8;
 }
 
 .frame {
-  border:6px solid white;
-  box-shadow:0 5px 15px rgb(0, 16, 247);               /*MY PROUDEST CREATION -pierre*/
+  border: 6px solid white;
+  box-shadow: 0 5px 15px rgb(0, 16, 247);   /* the greatest thing pierre has ever done, this is nothing compared to what i did... */
 }
+
+/* another free 5 points */
+.VideoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+}
+
+.VideoContainer iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.Box2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: #0da2dd;
+  font-size: large;
+}
+
+
+.Box2-PartsList {
+    max-width: 900px;
+}
+
+
+ /* OMG page 3 actually looks good */
+.PageContent {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.PageContent .Box {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.PartsAndVideo {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.PartsAndVideo > .Box2 {
+    min-width: 0;
+    margin: 0;
+}
+
+.AssemblyWarning {
+    max-width: 1100px !important;
+    margin: 20px auto 32px !important;
+    text-align: center;
+}
+
+/* you all don't know how much WASTED SPACE there was with this */
+.WrittenGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.WrittenSteps {
+    min-width: 0;
+}
+
+.WrittenSteps h3 {
+    margin-top: 28px;
+}
+
+.WrittenSteps .Box {
+    max-width: 100%;
+    margin: 12px 0 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Nothing {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    cursor: default;
+}
+
+.Nothing:hover {
+    color: inherit;
+    text-decoration: none;
+} /* what are you doing here */
